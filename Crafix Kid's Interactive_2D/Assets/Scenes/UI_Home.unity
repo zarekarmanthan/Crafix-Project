@@ -2540,6 +2540,7 @@ GameObject:
   - component: {fileID: 1848377253}
   - component: {fileID: 1848377252}
   - component: {fileID: 1848377251}
+  - component: {fileID: 1848377255}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2629,6 +2630,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1848377255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848377250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78a274a10addfd54da596616e4fb7579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1998128860
 GameObject:
   m_ObjectHideFlags: 0
@@ -3193,7 +3206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2063058115}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1848377255}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: GoToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2063058115
 MonoBehaviour:
   m_ObjectHideFlags: 0
